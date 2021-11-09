@@ -2,9 +2,16 @@ import express from "express";
 
 const app = express();
 
-const names: string = "hello world";
+class Department {
+  constructor(private names: string) {}
 
-console.log(names);
+   describe(){
+
+  }
+}
+
+const dp = new Department("HR");
+console.log(dp);
 
 app.listen(5000, () => {
   console.log("server starts on port ", 5000);
